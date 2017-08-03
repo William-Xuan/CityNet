@@ -66,6 +66,7 @@ public class Main {
             }
             System.out.println(k);
         }
+        mScanner.close();
     }
     public static void findPath(int u,int v,ArrayList<Integer> path){
         //System.out.println("---------------------");
