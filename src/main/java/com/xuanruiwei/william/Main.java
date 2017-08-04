@@ -93,4 +93,32 @@ public class Main {
         }
         path.remove(path.size() - 1);
     }
+    public static class City {
+        int id;
+        int value = 0;
+        List<Integer> citysConnect;
+
+        public City(int id, int value) {
+            this.id = id;
+            this.value = value;
+            citysConnect = new ArrayList<Integer>();
+        }
+
+        public void addCityConnected(int cityID) {
+            if (!citysConnect.contains(cityID))
+                citysConnect.add(cityID);
+        }
+
+        public List<Integer> getCitysConnect() {
+            return citysConnect;
+        }
+
+        public int getId() {
+            return id;
+        }
+
+        public int getValue() {
+            return value;
+        }
+    }
 }
